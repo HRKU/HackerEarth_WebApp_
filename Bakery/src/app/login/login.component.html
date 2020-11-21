@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<div style="overflow-x: hidden">
+<div class="row" >
+  <div class="col-lg-4">
+
+  </div>
+  <div class="col-lg-4 bg-img">
+    <form  #myform="ngForm" (submit)="loginClicked(myform)" class="container" style="border-radius: 5px; color: #faf4e5;">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input ngModel type="text" placeholder="Enter Email" name="Email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input ngModel type="password" placeholder="Enter Password" name="Password" required>
+
+      <button type="submit" class="btn button">Login</button>
+    </form>
+  </div>
+  <div class="col-lg-4">
+
+
+  </div>
+</div>
+</div>

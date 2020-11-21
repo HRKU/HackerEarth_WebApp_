@@ -1,0 +1,37 @@
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #f5f5f544;
+  border-top: 0;
+
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.container{
+  color: black;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+
+}
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="BakerShop_BackEnd@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.19">
+    <root id="1">
+      <ServerVersion>4.2.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="BakerShop_BackEnd">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="admin"/>
+    <schema id="4" parent="1" name="backendshop"/>
+    <schema id="5" parent="1" name="collec"/>
+    <schema id="6" parent="1" name="config"/>
+    <schema id="7" parent="1" name="local"/>
+    <schema id="8" parent="1" name="mydb"/>
+    <schema id="9" parent="1" name="myrk"/>
+    <schema id="10" parent="1" name="py"/>
+    <schema id="11" parent="1" name="python"/>
+    <schema id="12" parent="1" name="sampleDB"/>
+    <table id="13" parent="2" name="categories"/>
+    <table id="14" parent="2" name="orders"/>
+    <table id="15" parent="2" name="products"/>
+    <table id="16" parent="2" name="users"/>
+    <column id="17" parent="13" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="18" parent="13" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="19" parent="13" name="createdAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="20" parent="13" name="updatedAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="21" parent="13" name="name">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="14" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="23" parent="14" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="24" parent="14" name="address">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="25" parent="14" name="createdAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="26" parent="14" name="products">
+      <DataType>list(0)|4999545s</DataType>
+    </column>
+    <column id="27" parent="14" name="updatedAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="28" parent="14" name="user">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="29" parent="14" name="amount">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="30" parent="14" name="products._id">
+      <Position>1</Position>
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="31" parent="14" name="products.count">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="32" parent="14" name="products.name">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="33" parent="14" name="products.price">
+      <Position>4</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="34" parent="14" name="products.product">
+      <Position>5</Position>
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="35" parent="14" name="status">
+      <Position>6</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="36" parent="15" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="37" parent="15" name="Cost">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="38" parent="15" name="Description">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="39" parent="15" name="ProductName">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="40" parent="15" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="41" parent="15" name="category">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="42" parent="15" name="createdAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="43" parent="15" name="photoByPath">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="44" parent="15" name="updatedAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="45" parent="15" name="Sold">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="46" parent="15" name="Stock">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="47" parent="16" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="48" parent="16" name="Dateofbirth">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="49" parent="16" name="Email">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="50" parent="16" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="51" parent="16" name="createdAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="52" parent="16" name="updatedAt">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="53" parent="16" name="Address">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="54" parent="16" name="Fullname">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="55" parent="16" name="City">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="56" parent="16" name="Mobile">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="57" parent="16" name="Password">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,40 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<div class="div" style="padding: 100px; text-align: center; overflow-y: hidden">
+    <div class="header" id="myHeader" >
+      <h2 style="  font-size: 60px;
+">
+         {{myCategory.name}} Menu
+          </h2>
+    </div>
+  <br>
+  <br>
+    <div class="row">
+
+        <div class="column" *ngFor="let i of Home_products">
+
+          <a routerLink="/product-details/{{i._id}}" style="color: black;" >
+            <div class="container">
+                <img class="img-thumbnail" style=" width:100% " height="350px"  src="http://localhost:3100/{{i.photoByPath}}">
+                  <div class="overlay">
+                      <h3 style="text-align: center; margin-top: auto; margin-top: 20px;" >{{i.ProductName}}</h3>
+                      <br>
+                      <p style="text-align: center; margin-top: auto ;" >Rs.{{i.Cost}}</p>
+                      <br>
+                       <p style="text-align: center; margin-top: auto; margin-top: 20px;">
+                      <ng-template #t let-fill="fill">
+                        <span class="star" [class.full]="fill === 100">
+                          <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+                        </span>
+                      </ng-template>
+                      <ngb-rating [(rate)]="i.rating" [starTemplate]="t" [readonly]="true" [max]="5">
+
+                      </ngb-rating>
+                    </p>
+
+                  </div>
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>

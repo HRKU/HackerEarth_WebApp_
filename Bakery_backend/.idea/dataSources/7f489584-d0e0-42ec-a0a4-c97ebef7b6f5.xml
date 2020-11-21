@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MongoDB - @localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.19">
+    <root id="1">
+      <ServerVersion>4.2.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="BakerShop_BackEnd"/>
+    <schema id="3" parent="1" name="admin"/>
+    <schema id="4" parent="1" name="backendshop"/>
+    <schema id="5" parent="1" name="collec"/>
+    <schema id="6" parent="1" name="config"/>
+    <schema id="7" parent="1" name="local"/>
+    <schema id="8" parent="1" name="mydb"/>
+    <schema id="9" parent="1" name="myrk"/>
+    <schema id="10" parent="1" name="py"/>
+    <schema id="11" parent="1" name="python"/>
+    <schema id="12" parent="1" name="sampleDB"/>
+  </database-model>
+</dataSource>

@@ -1,0 +1,105 @@
+<!--<div style="overflow-x: hidden">-->
+<!--<div class="row" >-->
+
+<!--      <div class="col-lg-3"></div>-->
+<!--      <div class="col-lg-6" style="background-color: #414242d5; border-radius: 20px;" >-->
+<!--        <div class=" text-center" style="margin-top: 10px; color: rgb(253, 253, 253);">-->
+<!--            <img style=" border-radius: 10px; border-width: 5px; ;" width="200px" height="200px" src="http://localhost:3100/{{Home_products.photoByPath}}" alt="">-->
+<!--        </div>-->
+<!--            <div class="container" style="color: rgb(240, 243, 243);">-->
+<!--                <h4>-->
+<!--                    Name : {{Home_products.ProductName}}-->
+<!--                 </h4>-->
+<!--                 <br>-->
+<!--                 <h4>-->
+<!--                   Category :    {{Home_products.category.name}}-->
+<!--                 </h4>-->
+<!--                 <br>-->
+<!--                 <span>-->
+<!--                   <h4>Price : ₹ {{Home_products.Cost}}</h4>-->
+<!--                 </span>-->
+<!--                 <br>-->
+<!--                 <h4>-->
+<!--                  Description :     {{Home_products.Description}}-->
+<!--                 </h4>-->
+<!--                 <br>-->
+<!--                 <h4>-->
+<!--                     Select Qty:-->
+<!--                 </h4>-->
+<!--                 <span>-->
+<!--                    <select name="" id="" #ingre_qty>-->
+<!--                        <option value="1">1</option>-->
+<!--                        <option value="2">2</option>-->
+<!--                        <option value="3">3</option>-->
+<!--                        <option value="4">4</option>-->
+<!--                        <option value="5">5</option>-->
+<!--                    </select>-->
+<!--                </span>-->
+<!--            </div>-->
+
+
+
+<!--       <br>-->
+<!--       <button (click)="addTocart()" class="btn text-light button containerr" style="border-radius: 20px;" >-->
+<!--            Add to Cart-->
+<!--         <br>-->
+<!--       </button>-->
+<!--        <br>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3"></div>-->
+
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+<!--E-com Product Detail page -->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<div style="overflow-x: hidden; background: #c9c9c999 ">
+<div class="row"  >
+
+    <div class="col-lg-5 text-center">
+            <img width="512px" height="620px" src="http://localhost:3100/{{Home_products.photoByPath}}" alt="">
+        </div>
+
+
+    <div class="col-lg-7 bg-gray Details" style="margin-top: 5%">
+       <h1 style="font-size: 50px">
+         <b class="bu">Name</b>  : {{Home_products.ProductName}}
+       </h1>
+       <hr>
+       <h2 style="font-size: 35px">
+        <b class="bu">Category</b>  :    {{Home_products.category.name}}
+       </h2>
+       <hr>
+       <h4 style="font-size: 35px">
+         <b class="bu">Price</b> : Rs. {{Home_products.Cost}}
+       </h4>
+       <hr>
+       <h3 style="font-size: 30px">
+        <b class="bu">Description</b>  :     {{Home_products.Description}}
+       </h3>
+      <hr>
+       <h4 style="font-size: 38px">
+         <b class="bu"> Select Qty:</b>
+       </h4>
+       <span style="font-family: -apple-system ; font-size:18px;">
+           <select name="" id="" #ingre_qty>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+           </select>
+       </span>
+       <hr>
+       <button (click)="addTocart()" class="btn text-light">
+            Add to Cart
+       </button>
+    </div>
+</div>
+</div>

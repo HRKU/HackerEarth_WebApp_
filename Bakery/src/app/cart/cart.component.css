@@ -1,0 +1,33 @@
+.containerr {
+    position: relative;
+    right: 0;
+    /* margin-left: 40%; */
+    max-width: auto;
+    padding: 16px;
+    background-color: rgba(74, 75, 75, 0.76);
+
+    }
+ 
+  .container
+  {
+      background-color: rgb(223, 199, 93);
+      position: relative;
+      right: 0;
+      /* margin-left: 40%; */
+      max-width: fit-content;
+      font-size: 20px;
+      padding: 16px;
+      color: rgb(253, 251, 241);
+  }
+  table.table-bordered > thead > tr > th {
+    border:1px solid rgba(170, 170, 170, 0.726);
+  }
+  table.table-bordered > tbody > tr > td {
+     border:1px solid rgba(170, 170, 170, 0.726);
+  }
+  table.table-bordered > tfoot > tr > th {
+     border:1px solid rgba(170, 170, 170, 0.726);
+  }
+  table.table-bordered > tr > th {
+     border:1px solid rgba(170, 170, 170, 0.726);
+  }
