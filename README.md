@@ -8,9 +8,14 @@ Welcome to the Baker.co Web-app
 Before you begin we recommend you read about the basic building blocks that assemble a MEAN.JS application:
 
 MongoDB - Go through MongoDB Official Website and proceed to their Official Manual, which should help you understand NoSQL and MongoDB better.
-Express - The best way to understand express is through its Official Website, which has a Getting Started guide, as well as an ExpressJS guide for general express topics. You can also go through this StackOverflow Thread for more resources.
+
+Express - The best way to understand express is through its Official Website, which has a Getting Started guide, as well as an ExpressJS guide for general express topics.
+You can also go through this StackOverflow Thread for more resources.
+
 AngularJS - Angular's Official Website is a great starting point. You can also use Thinkster Popular Guide, and Egghead Videos.
+
 Node.js - Start by going through Node.js Official Website and this StackOverflow Thread, which should get you going with the Node.js platform in no time.
+
 Prerequisites
 Make sure you have installed all of the following prerequisites on your development machine:
 
