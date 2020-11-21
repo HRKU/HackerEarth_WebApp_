@@ -17,11 +17,15 @@ AngularJS - Angular's Official Website is a great starting point. You can also u
 Node.js - Start by going through Node.js Official Website and this StackOverflow Thread, which should get you going with the Node.js platform in no time.
 
 Prerequisites
+
 Make sure you have installed all of the following prerequisites on your development machine:
 
 Git - Download & Install Git. OSX and Linux machines typically have this already installed.
+
 Node.js - Download & Install Node.js and the npm package manager. If you encounter any problems, you can also use this GitHub Gist to install Node.js.
+
 MongoDB - Download & Install MongoDB, and make sure it's running on the default port (27017).
+
 
 Cloning The GitHub Repository
 The recommended way to get MEAN.js is to use git to directly clone the MEAN.JS repository:
@@ -29,12 +33,7 @@ The recommended way to get MEAN.js is to use git to directly clone the MEAN.JS r
 $ git clone https://github.com/HRKU/HackerEarth_WebApp_.git
 This will clone the latest version of the MEAN.JS repository to a meanjs folder.
 
-Downloading The Repository Zip File
-Another way to use the MEAN.JS boilerplate is to download a zip copy from the master branch on GitHub. You can also do this using the wget command:
-
-$ wget https://github.com/meanjs/mean/archive/master.zip -O meanjs.zip; unzip meanjs.zip; rm meanjs.zip
-Don't forget to rename mean-master after your project name.
-
+Downloading The Repository Zip File is also another way
 
 Quick Install
 Once you've downloaded the boilerplate and installed all the prerequisites, you're just a few steps away from starting to develop your MEAN application.
