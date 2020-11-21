@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 let port = process.env.PORT || 3100;
-mongoose.connect('mongodb://localhost:27017/BakerShop_BackEnd',
+mongoose.connect('mongodb://hrku_123:hrku_123@merncluster-shard-00-00.u08je.mongodb.net:27017,merncluster-shard-00-01.u08je.mongodb.net:27017,merncluster-shard-00-02.u08je.mongodb.net:27017/Bakery_Backend?ssl=true&replicaSet=atlas-4476ih-shard-0&authSource=admin&retryWrites=true&w=majority',
  {useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true
