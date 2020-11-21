@@ -34,7 +34,7 @@ export class MenuComponent implements OnInit {
   constructor(private productServi: ProductServices, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<{[key: string]: Products}>('http://localhost:3100/api/products')
+    this.http.get<{[key: string]: Products}>('http://18.222.5.38:3100/api/products')
     .pipe(map(responseData => {
       const postArray = [];
       for (const key in responseData)
