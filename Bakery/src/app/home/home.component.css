@@ -1,85 +1,84 @@
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: auto) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: auto) {
-    .column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
-      flex: 100%;
-      max-width: width auto; ;
-    }
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: auto) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: auto) {
+  .column {
+    flex: 100%;
+    max-width: width auto;
+  }
+}
+
 .container {
-    position: relative;
-    width: 50%;
-  }
+  position: relative;
+  width: 50%;
+}
 .img-thumbnail {
-    /* display: block;   */
-    width: 250px;
-    height: 300px;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    top: 7px;
-    left: 15px;
-    right: 15px;
-    background-color: white;
-    overflow: hidden;
-    width:auto ;
-    height:0;
-    transition: .5s ease;
-    opacity: .9;
-  }
-  
-  .container:hover .overlay {
-    bottom: 0;
-    height: 97%;
-  }
-  
-  .text {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .container{
-    /* background-color: white; */
-    width: auto;
-    height: auto;
-    /* opacity: */
-    border-radius: 10mm;
+  /* display: block;   */
+  width: 250px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  top: 7px;
+  left: 15px;
+  right: 15px;
+  background-color: white;
+  overflow: hidden;
+  width: auto;
+  height: 0;
+  transition: 0.5s ease;
+  opacity: 0.9;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 97%;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container {
+  /* background-color: white; */
+  width: auto;
+  height: auto;
+  /* opacity: */
+  border-radius: 10mm;
 }
 * {
   box-sizing: border-box;
@@ -185,7 +184,7 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
