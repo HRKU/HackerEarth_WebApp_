@@ -28,7 +28,7 @@ export class ProductDetailsComponent implements OnInit {
 
 
 
-      this.http.get("http://localhost:3100/api/product/"+id2).subscribe(posts =>{
+      this.http.get("https://bakery-backend-api.herokuapp.com/api/product/"+id2).subscribe(posts =>{
         console.log("array"+posts);
 
        this.Home_products =  posts;

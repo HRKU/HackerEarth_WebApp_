@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
 
     alert(password);
 
-    this.http.post('http://localhost:3100/api/signin',login).subscribe(responseData => {
+    this.http.post('https://bakery-backend-api.herokuapp.com/api/signin',login).subscribe(responseData => {
       console.log(responseData);
       alert("Log in Successfull Baker!")
         this.router.navigate(['/main']);

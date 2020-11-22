@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<{[key:string]:Category}>("http://localhost:3100/api/categories")
+    this.http.get<{[key:string]:Category}>("https://bakery-backend-api.herokuapp.com/api/categories")
     .pipe(map(responseData =>{
       const postArray =[];
       for (const key in responseData)
@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
     });
 
     // Second api call
-    this.http.get<{[key:string]:Products}>("http://localhost:3100/api/products")
+    this.http.get<{[key:string]:Products}>("https://bakery-backend-api.herokuapp.com/api/products")
     .pipe(map(responseData =>{
       const SearchArray =[];
       for (const key in responseData)

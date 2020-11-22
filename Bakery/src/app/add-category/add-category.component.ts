@@ -22,7 +22,7 @@ export class AddCategoryComponent implements OnInit {
   {
     // console.log(postData);
 
-    this.http.post('http://localhost:3100/api/category/create',postData).subscribe(responseData => {
+    this.http.post('https://bakery-backend-api.herokuapp.com/api/category/create',postData).subscribe(responseData => {
       console.log(responseData);
       alert("Welcome!! Baker, category created Successfully.")
     })

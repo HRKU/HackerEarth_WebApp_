@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private productServi :ProductServices,private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<{[key:string]:Products}>("http://localhost:3100/api/products")
+    this.http.get<{[key:string]:Products}>("https://bakery-backend-api.herokuapp.com/api/products")
     .pipe(map(responseData =>{
       const postArray =[];
       for (const key in responseData)

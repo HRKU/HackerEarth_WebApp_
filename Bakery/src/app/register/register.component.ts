@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
   {
     console.log(postData);
 
-    this.http.post('http://localhost:3100/api/signup',postData).subscribe(responseData => {
+    this.http.post('https://bakery-backend-api.herokuapp.com/api/signup',postData).subscribe(responseData => {
       console.log(responseData);
       alert("Welcome!! Baker, Account created Successfully.")
     })

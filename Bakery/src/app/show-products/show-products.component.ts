@@ -45,7 +45,7 @@ export class ShowProductsComponent implements OnInit {
     ngOnInit() {
       let id12 = this.route.snapshot.paramMap.get('id2');
       console.log(id12);
-            this.http.get("http://localhost:3100/api/category/"+id12).subscribe(cate=>
+            this.http.get("https://bakery-backend-api.herokuapp.com/api/category/"+id12).subscribe(cate=>
             {
               this.myCategory = cate;
             });
@@ -55,7 +55,7 @@ export class ShowProductsComponent implements OnInit {
 
 
 
-      this.http.get("http://localhost:3100/api/productCate/"+id1).subscribe(posts =>{
+      this.http.get("https://bakery-backend-api.herokuapp.com/api/productCate/"+id1).subscribe(posts =>{
         console.log("array"+posts);
 
        this.Home_products =  posts;
