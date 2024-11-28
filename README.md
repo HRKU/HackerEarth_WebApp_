@@ -1,69 +1,112 @@
-# HackerEarth_WebApp_
+
+HackerEarth_WebApp_
 HackerEarth JetBrains Competition / Bakery Web App
 
-Welcome to the Baker.co Web-app 
- 
+Welcome to the Baker.co Web App, an online bakery management system! This application demonstrates a full-stack MEAN (MongoDB, Express.js, Angular, Node.js) implementation.
 
-
-Before you begin we recommend you read about the basic building blocks that assemble a MEAN.JS application:
-
-MongoDB - Go through MongoDB Official Website and proceed to their Official Manual, which should help you understand NoSQL and MongoDB better.
-
-Express - The best way to understand express is through its Official Website, which has a Getting Started guide, as well as an ExpressJS guide for general express topics.
-You can also go through this StackOverflow Thread for more resources.
-
-AngularJS - Angular's Official Website is a great starting point. You can also use Thinkster Popular Guide, and Egghead Videos.
-
-Node.js - Start by going through Node.js Official Website and this StackOverflow Thread, which should get you going with the Node.js platform in no time.
+Overview
+This project was created as part of the HackerEarth JetBrains Competition. It showcases a functional web application for managing a bakery, including product listings and basic backend API integrations.
 
 Prerequisites
+Before starting, ensure your development environment has the following installed:
 
-Make sure you have installed all of the following prerequisites on your development machine:
+Git
 
-Git - Download & Install Git. OSX and Linux machines typically have this already installed.
+Download & Install Git.
+Check if Git is installed:
+bash
+Copy code
+git --version
+Node.js and npm
 
-Node.js - Download & Install Node.js and the npm package manager. If you encounter any problems, you can also use this GitHub Gist to install Node.js.
+Download & Install Node.js.
+Confirm installation:
+bash
+Copy code
+node -v
+npm -v
+MongoDB
 
-MongoDB - Download & Install MongoDB, and make sure it's running on the default port (27017).
+Download & Install MongoDB.
+Ensure it is running on the default port 27017.
+Installation
+Clone the Repository
+Clone the project repository to your local machine:
 
+bash
+Copy code
+git clone https://github.com/HRKU/HackerEarth_WebApp_.git
+Alternatively, you can download the repository as a ZIP file and extract it.
 
-Cloning The GitHub Repository
-The recommended way to get MEAN.js is to use git to directly clone the MEAN.JS repository:
+Install Dependencies
+Navigate to the project directory and install the necessary dependencies:
 
-$ git clone https://github.com/HRKU/HackerEarth_WebApp_.git
-This will clone the latest version of the MEAN.JS repository to a meanjs folder.
+bash
+Copy code
+npm install
+This command will:
 
-Downloading The Repository Zip File is also another way
+Install both production and development dependencies.
+Automatically run bower install (if using Bower for front-end dependencies).
+Run the Application
+Start the Frontend
+Run the Angular frontend:
 
-Quick Install
-Once you've downloaded the boilerplate and installed all the prerequisites, you're just a few steps away from starting to develop your MEAN application.
+bash
+Copy code
+ng serve
+The frontend will be available at http://localhost:4200.
 
-The boilerplate comes pre-bundled with a package.json and bower.json files that contain the list of modules you need to start your application.
+Start the Backend
+Run the Node.js backend:
 
-To install the dependencies, run this in the application folder from the command-line:
+bash
+Copy code
+node app.js
+The backend will be available at http://localhost:3100.
 
-$ npm install
-This command does a few things:
+Ensure both servers are running simultaneously for the application to function locally.
 
-First it will install the dependencies needed for the application to run.
-If you're running in a development environment, it will then also install development dependencies needed for testing and running your application.
-When the npm packages install process is over, npm will initiate a bower install command to install all the front-end modules needed for the application
-To update these packages later on, just run npm update
-Running Your Application
-Run your Front-End Angular using ng serve:
+Folder Structure
+Here’s an overview of the project structure:
 
-$ ng serve
-Your front-end should run on port 4200 with the development environment configuration, so in your browser just go to http://localhost:4200
+bash
+Copy code
+HackerEarth_WebApp_  
+│  
+├── backend/          # Backend code (Node.js + Express)  
+├── frontend/         # Frontend code (Angular)  
+├── uploads/          # Uploaded images and assets  
+├── package.json      # Backend dependencies  
+├── angular.json      # Angular project configuration  
+└── README.md         # Project documentation  
+Configuration
+Development Environment:
+Configure environment variables or review config/env/development.js for backend-specific settings.
 
-Run your Back-End Node.js server using node app.js:
+Connecting to MongoDB:
+Ensure MongoDB is running on localhost:27017. You can update connection details in your backend configuration file if needed.
 
-Your backend should run on port 3100 i.e http:// localhost:3100 with the development environment configuration.
+Troubleshooting
+CORS Issues
 
-Make sure that both the servers are up and running for it to run locally.
+Ensure the backend API includes the necessary Access-Control-Allow-Origin headers.
+Images Not Displaying
 
-That's it! Your application should be running. To proceed with your development, check the other sections in this documentation. If you encounter any problems, try the Troubleshooting section.
+Verify the photoByPath field in the backend response matches the correct file paths.
+Dependency Errors
 
-Explore config/env/development.js for development environment configuration options.
+If npm install fails, delete node_modules and try again:
+bash
+Copy code
+rm -rf node_modules  
+npm install  
+Future Improvements
+Implement a more modern UI with better styling.
+Optimize API routes for scalability and performance.
+Host the backend on a reliable free-tier service like Render or Fly.io.
+Add advanced features like user authentication, order tracking, and payment integration.
+Acknowledgments
+Special thanks to Reet Khanchandani for being an amazing teammate during this project.
 
-
-Thanking Reet Khanchandani for being such Good Teammate
+Feel free to suggest further improvements or contribute to this project!
