@@ -5,7 +5,7 @@ This is my first web project showcasing my capability to build and deploy a webs
 ## 🚀 Live Demo
 The website is now **hosted and deployed**. You can check it out here:
 
-🔗 **[Live Website](#)** *https://bakersworld.netlify.app/main*
+🔗 **[Live Website](#)** *https://bakersworld.netlify.app*
 
 ---
 ## 🛠 Setup & Installation
