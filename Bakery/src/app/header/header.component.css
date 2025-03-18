@@ -1,82 +1,110 @@
+/* General Navbar Styling */
+.navbar-custom {
+  background-color: #8b5e3b; /* Warm brown tone */
+  padding: 10px 20px;
+}
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Brand Name Styling */
+.navbar-brand h4 {
+  font-family: "Satisfy", cursive;
+  font-size: 32px;
+  color: rgba(250, 244, 229, 0.979);
+  margin: 0;
+  white-space: nowrap;
+}
 
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
+/* Navbar Links - Desktop (Horizontal) */
+@media (min-width: 992px) {
+  .navbar-nav {
+    display: flex; /* Ensures horizontal layout */
+    flex-direction: row; /* Aligns items in a row */
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Adds spacing between items */
+  }
+
+  .navbar-nav .nav-link {
     color: #f1f4f8;
-}
-.nav-link
-{
-color: #f1f4f8;
-}
-.navbar-nav > li > .dropdown-menu {
-    background-color: whitesmoke;
-    text-align: center;
-
-}
-
-.navbar-nav > li > .dropdown-menu a:hover
-{
-    background-color: rgba(247, 232, 195, 0.979);
-
-}
-
-
-.btn{
-    background-color: rgb(202, 156, 96);
-    width: 100px;
-    height: 40px;
-    border: none;
-    color: whitesmoke;
-    /* padding: 10px 20px; */
-    text-align: center;
-    /*text-decoration: none;*/
-    display: inline-block;
-    margin: 4px 2px;
-    /*cursor: pointer;*/
-    border-radius: 20px;
-  outline: none;
-}
-
-
-
-.container{
-    /* background-color: white; */
-    width: 900px;
-    height: 400px;
-    /* opacity: */
-    border-radius: 10mm;
-}
-* {
-    box-sizing: border-box;
-  }
-
-  #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 100%;
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
   }
 
-  #myUL {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  .navbar-nav .nav-link:hover {
+    color: #ffdab9; /* Light peach */
+  }
+}
+
+/* Navbar Links - Mobile (Vertical) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #8b5e3b; /* Keeps background color */
+    padding: 10px;
+    border-radius: 24px;
   }
 
-  #myUL li a {
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    text-align: center; /* Centers text */
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0; /* Adds space between items */
+  }
+
+  .btn-custom {
+    width: 100%; /* Full-width buttons */
     padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block
+    font-size: 16px;
   }
+}
 
-  #myUL li a:hover:not(.header) {
-    background-color: #eee;
-  }
+/* Dropdown Menu */
+.navbar-nav .dropdown-menu {
+  background-color: #f6f1eb; /* Light beige */
+  border-radius: 24px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-menu a {
+  color: #8b5e3b;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+  background-color: #f7e8c3;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #ca9c60; /* Soft golden */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 17px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #a67c52; /* Darker shade */
+}
+
+/* Shopping Cart Icon */
+.navbar-nav .nav-item img {
+  width: 35px;
+  height: 35px;
+}
