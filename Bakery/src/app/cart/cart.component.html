@@ -1,89 +1,99 @@
 <div style="overflow-x: hidden">
-<div class="row">
+  <div class="row">
     <div class="col-lg-2"></div>
     <div class="col-lg-8">
+      <div class="row">
+        <div
+          class="col-lg-12 containerr"
+          style="color: rgba(255, 255, 255, 0.767); border-radius: 20px"
+        >
+          <h1 class="text-center">Your Cart</h1>
 
-<div class="row">
-    <div class="col-lg-12 containerr" style=" color: rgba(255, 255, 255, 0.767); border-radius: 20px;">
-        <h1 class="text-center">
-            Your Cart
-        </h1>
-
-        <table class="table table-hover table-bordered " style="margin: 0 auto;text-align:center;border: black; color:rgba(255, 255, 255, 0.767); border-radius: 20px;">
+          <table
+            class="table table-hover table-bordered"
+            style="
+              margin: 0 auto;
+              text-align: center;
+              border: black;
+              color: rgba(255, 255, 255, 0.767);
+              border-radius: 20px;
+            "
+          >
             <thead>
-                <tr>
-                    <th>Sr No</th>
-                    <th>Product Name</th>
-                    <th>Product Image</th>
-                    <th>Product Qty</th>
-                    <th>Product Price</th>
-                    <th>Total</th>
-                    <th>Remove</th>
-                </tr>
-
+              <tr>
+                <th>Sr No</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Product Qty</th>
+                <th>Product Price</th>
+                <th>Total</th>
+                <th>Remove</th>
+              </tr>
             </thead>
             <tbody>
-                <tr  *ngFor="let i of cart; let m = index" >
+              <tr *ngFor="let i of cart; let m = index">
+                <td>{{ m + 1 }}</td>
+                <td>{{ i.product_name }}</td>
 
-                    <td>{{m+1}}</td>
-                    <td>{{i.product_name}}</td>
+                <td>
+                  <img
+                    style="border-radius: 20px; justify-content: center"
+                    width="100px"
+                    height="100px"
+                    src="https://bakery-backend-h81u.onrender.com/{{
+                      i.product_image
+                    }}"
+                    alt=""
+                  />
+                </td>
+                <td>{{ i.product_count }}</td>
+                <td>{{ i.product_price }}</td>
 
-                    <td>
-                        <img style="border-radius: 20px; justify-content: center;" width="100px" height="100px" src="https://bakery-backend-api.herokuapp.com/{{i.product_image}}" alt="">
-                    </td>
-                    <td>{{i.product_count}}</td>
-                    <td>{{i.product_price}}</td>
+                <td>{{ i.product_count * i.product_price }}</td>
 
-                    <td>{{i.product_count * i.product_price }}</td>
-
-                    <td>
-
-                        <button (click)="deleteCart(m)" class="btn text-light rounded" style="border-radius: 20px; background-color: rgb(245, 70, 17);">
-                            X
-                        </button>
-                    </td>
-
-                </tr>
-                <tr style="border: black;" *ngIf="cart.length === 0">
-                    <th style="border:1px black;" class="text-center" colspan="7">
-                                No Items In Cart.
-                        </th>
-                </tr>
+                <td>
+                  <button
+                    (click)="deleteCart(m)"
+                    class="btn text-light rounded"
+                    style="
+                      border-radius: 20px;
+                      background-color: rgb(245, 70, 17);
+                    "
+                  >
+                    X
+                  </button>
+                </td>
+              </tr>
+              <tr style="border: black" *ngIf="cart.length === 0">
+                <th style="border: 1px black" class="text-center" colspan="7">
+                  No Items In Cart.
+                </th>
+              </tr>
             </tbody>
 
-
-
             <tfoot>
-
-                <tr>
-                    <th colspan="5" class="text-right">
-                        Final Amount
-                    </th>
-                    <th>
-                        ₹ {{final_total}}
-                    </th>
-
-                </tr>
-
+              <tr>
+                <th colspan="5" class="text-right">Final Amount</th>
+                <th>₹ {{ final_total }}</th>
+              </tr>
             </tfoot>
+          </table>
 
-        </table>
-
-<div class="row">
-    <div class="col-lg-12 ">
-
-            <!-- <a routerLink="/checkout"> -->
-                <button (click)="placeOrder2()"  class="btn container float-right mr-8" >
-                    Check Out
-                </button>
-            <!-- </a> -->
-
-    </div>
-    </div>
-</div>
-
-</div>
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- <a routerLink="/checkout"> -->
+              <button
+                (click)="placeOrder2()"
+                class="btn container float-right mr-8"
+              >
+                Check Out
+              </button>
+              <!-- </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-lg-2"></div>
-</div>
   </div>
+</div>
